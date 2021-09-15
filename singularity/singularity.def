@@ -14,6 +14,7 @@ From: pytorch/pytorch:1.0.1-cuda10.0-cudnn7-devel
 	pip install cython 
 	conda install --yes pytorch=0.4.1 cuda90 -c pytorch 
 	conda install --yes scikit-learn 
+	conda install --yes pip
 	pip install "Pillow<7" pymongo pandas 
 	pip install torchvision==0.2.1 
 	conda install --yes -c conda-forge opencv
