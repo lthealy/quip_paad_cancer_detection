@@ -1,0 +1,4 @@
+singularity run --nv --env CUDA_VISIBLE_DEVICES="0" --bind /data00/shared/LTH/quip_paad_cancer_detection/data:/data --bind /data10/shared/tcga_all/paad:/data/svs:ro singularity/paad_detection.sif svs_2_heatmap.sh
+
+## To check your binds, try:
+singularity exec --bind /data00/shared/LTH/quip_paad_cancer_detection/data/:/quip_app/quip_paad_cancer_detection/data/ --bind /data10/shared/tcga_all/paad:/data/svs:ro singularity/paad_detection.sif ls -l /data
