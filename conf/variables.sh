@@ -12,7 +12,7 @@ if [[ -z "${HEATMAP_VERSION}" ]]; then
 fi
 
 # Base data and output directories
-export BASE_DIR=/quip_app/quip_paad_cancer_detection
+export BASE_DIR=/data00/shared/LTH/quip_paad_cancer_detection
 export DATA_DIR=/data
 export OUT_DIR=${DATA_DIR}/output
 
@@ -24,7 +24,7 @@ export LOG_OUTPUT_FOLDER=${OUT_DIR}/log
 export SVS_INPUT_PATH=${DATA_DIR}/svs
 export PATCH_PATH=${DATA_DIR}/patches
 
-export LYM_NECRO_CNN_MODEL_PATH=${BASE_DIR}/models_cnn
+export LYM_NECRO_CNN_MODEL_PATH=/quip_app/quip_paad_cancer_detection/models_cnn
 export MODEL="paad_baseline_preact-res34_train_TCGA_ensemble_epoch_7_auc_0.8595125864960883"
 
 # Training folders
